@@ -1,0 +1,21 @@
+body {
+    background-color: lightcyan;
+}
+
+.gallery-item {
+    width: 100%;
+}
+
+.col img {
+    border: 10px solid white;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.500);
+}
+p::after{
+    content: '';
+    position: absolute;
+    width: 50%;
+    border: 1px solid black;
+    bottom: 15%;
+    left: 25%;
+    right: 25%;
+}
