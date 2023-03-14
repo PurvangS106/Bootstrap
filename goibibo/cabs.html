@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goibibo cabs</title>
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Normal Css -->
+    <link rel="stylesheet" href="cabsstyle.css">
+    <link rel="Icon" href="assets/goibibologo2.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <img src="assets/logo1.png" alt="" height="auto" width="10%">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item "><a class="nav-link active rounded-pill" aria-current="page"
+                            href="index.html"><i class="bi bi-airplane-engines-fill"></i> Flights</a></li>
+                    <li class="nav-item"><a class="nav-link active rounded-pill" aria-current="page"
+                            href="hotels.html"><i class="bi bi-building-fill"></i> Hotels</a></li>
+                    <li class="nav-item"><a class="nav-link active rounded-pill" aria-current="page"
+                            href="trains.html"><i class="bi bi-train-front-fill"></i> Trains</a></li>
+                    <li class="nav-item"><a class="nav-link active rounded-pill" aria-current="page" href="cabs.html"><i
+                                class="bi bi-taxi-front-fill"></i> Cabs</a></li>
+                    <li class="nav-item"><a class="nav-link active rounded-pill" aria-current="page" href="bus.html"><i
+                                class="bi bi-bus-front-fill"></i> Buses</a></li>
+                    <li class="nav-item"><a class="nav-link active rounded-pill" aria-current="page" href="forex.html"
+                            target="_blank"><i class="bi bi-cash-coin"></i> Forex</a></li>
+                </ul>
+                <table class="table">
+                    <tr>
+                        <td rowspan="2"><i class="bi bi-wallet-fill"></i></i></td>
+                        <td>My trips</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Manage Bookings</a></td>
+                    </tr>
+                </table>
+                <div class="btn">
+                    <div class="container border" role="button" data-bs-toggle="modal" data-bs-target="#login"><i
+                            class="bi bi-person-circle text-primary"></i> Log in
+                    </div>
+
+                    <div class="modal" tabindex="-1" id="login">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Log in</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="container-fluid">
+                                        <div class="row text-start">
+                                            <div class="col-6 half1">
+                                                <h2 class="text-danger"><span style="font-weight: 100;">Fly</span> Easy
+                                                </h2>
+                                                <input class="checkbox" type="checkbox" checked><b> Save traveler
+                                                    details</b> <br>
+                                                <input class="checkbox" type="checkbox" checked><b> Manage and modify
+                                                    bookings</b> <br>
+                                                <input class="checkbox" type="checkbox" checked><b> Hassle-free web
+                                                    check-in</b> <br>
+                                            </div>
+                                            <div class="col-6 half2">
+                                                <b>Login/Signup</b> <br><br>
+                                                <div class="textOnInput">
+                                                    <label for="inputText">Mobile No.</label>
+                                                    <input class="form-control b1" type="text"
+                                                        placeholder="Enter your Mobile Number">
+                                                </div> <br><br>
+                                                <p><input type="submit" value="Continue"
+                                                        style="width: 100%; background-color: rgb(0, 110, 255);color: white; border: none; padding: 10px;">
+                                                </p> <br><br><br>
+                                                <p>By proceeding, you agree to GoIbibo’s <a href="">Privacy Policy</a>,
+                                                    <a href="">User Agreement</a> and <a href="">Terms of Service</a>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Main part1-->
+    <div class="container-fluid mainpart p-3">
+        <h3 class="text-center  pb-3">Book Hotels & Homestays</h3>
+        <div class="container main position-relative">
+            <div class="row justify-content-evenly">
+                <div class="col-md-5 column1 p-4 pb-5 rounded-3 bg-white mb-5 shadow-lg">
+                    <div class="row">
+                        <div class="col-12 pb-3 lh-lg">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-3 "><input type="radio" name="ways" id="way" checked>
+                                    Outstation One-way &nbsp;</div>
+                                <div class="col-md-6 col-lg-3"><input type="radio" name="ways" id="way"> Outstation
+                                    Round
+                                    Trip &nbsp;</div>
+                                <div class="col-md-6 col-lg-3"><input type="radio" name="ways" id="way"> Airport
+                                    Transfer
+                                    &nbsp;</div>
+                                <div class="col-md-6 col-lg-3"><input type="radio" name="ways" id="way"> Hourly Rental
+                                </div>
+                            </div>
+                            <br>
+                            <div>From</div>
+                            <input type="text" class="w-100 border-0" placeholder="Enter Pickup Location"><br><br>
+                            <div>To</div>
+                            <input type="text" class="w-100 border-0" placeholder="Enter Drop Location"><br><br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>Pickup Date</div>
+                                    <input type="date" class="w-100 border-0">
+                                </div>
+                                <div class="col-md-6">
+                                    <div>Pickup Time</div>
+                                    <input type="time" class="w-100 border-0">
+                                </div>
+                            </div>
+                            <br>
+                            <button class="btn btn1 w-50 text-white fs-5 rounded-pill">Search Cabs</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-12 mb-3 p-4 ">
+                            <img src="assets/cabsposter1.avif" alt="" width="100%">
+                        </div>
+                        <div class="col-12 p-0">
+                            <div id="carousel1" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row justify-content-evenly">
+                                            <div class="col-sm-5 p-0 rounded-3 bg-white shadow">
+                                                <img src="assets/main1.jpg" alt="" class="rounded-top w-100">
+                                                <p class="main-ad2 ps-sm-1 ps-3">UP to Rs. 30000 Off on International
+                                                    Hotel
+                                                    Bookings!</p>
+                                                <p class="main-ad ps-sm-1 ps-3 text-muted">Valid till: 22nd Jan'23</p>
+                                            </div>
+                                            <div class="col-sm-5  p-0 rounded-3 bg-white shadow">
+                                                <img src="assets/main2.webp" alt="" class="rounded-top w-100">
+                                                <p class="main-ad2 ps-sm-1 ps-3">Rewards That'll Blow Your Mind</p>
+                                                <p class="main-ad ps-sm-1 ps-3 text-muted">Valid till: Limited Period
+                                                    Offer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-evenly">
+                                            <div class="col-sm-5 p-0 rounded-3 bg-white shadow">
+                                                <img src="assets/main3.avif" alt="" class="rounded-top w-100">
+                                                <p class="main-ad2 ps-sm-1 ps-3">Get UP to 50% Off on Royal Orchid</p>
+                                                <p class="main-ad ps-sm-1 ps-3 text-muted">Valid till: 15th - 31st</p>
+                                            </div>
+                                            <div class="col-sm-5  p-0 rounded-3 bg-white shadow">
+                                                <img src="assets/main4.webp" alt="" class="rounded-top w-100">
+                                                <p class="main-ad2 ps-sm-1 ps-3">Avail Interest Free* EMI</p>
+                                                <p class="main-ad ps-sm-1 ps-3 text-muted">Valid till: Every Friday &
+                                                    Saterday
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-evenly">
+                                            <div class="col-sm-5 p-0 rounded-3 bg-white shadow">
+                                                <img src="assets/main5.webp" alt="" class="rounded-top w-100">
+                                                <p class="main-ad2 ps-sm-1 ps-3">Flat Rs. 350 Off!</p>
+                                                <p class="main-ad ps-sm-1 ps-3 text-muted">Valid till: All Days Except
+                                                    Mondays
+                                                </p>
+                                            </div>
+                                            <div class="col-sm-5  p-0 rounded-3 bg-white shadow">
+                                                <img src="assets/main6.webp" alt="" class="rounded-top w-100">
+                                                <p class="main-ad2 ps-sm-1 ps-3">Get UP to 10% Off on Travel Bookings!
+                                                </p>
+                                                <p class="main-ad ps-sm-1 ps-3 text-muted">Valid till: Limited Period
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel1"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel1"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="col-12 mt-2 ">
+                            <div id="carousel2" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row justify-content-evenly">
+                                            <div class="col-sm-5 bg-white p-2 rounded shadow">
+                                                &nbsp; <img src="assets/cabsposter8.png" alt="" height="30px">&nbsp;
+                                                Experienced and polite drivers
+                                            </div>
+                                            <div class="col-sm-5 bg-white p-2 rounded shadow">
+                                                &nbsp; <img src="assets/cabsposter9.png" alt="" height="30px">&nbsp;
+                                                Clean and comfortable cabs
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-evenly">
+                                            <div class="col-sm-5 bg-white p-2 rounded shadow">
+                                                &nbsp; <img src="assets/cabsposter9.png" alt="" height="30px">&nbsp;
+                                                Clean and comfortable cabs
+                                            </div>
+                                            <div class="col-sm-5 bg-white p-2 rounded shadow">
+                                                &nbsp; <img src="assets/cabsposter10.png" alt="" height="30px">&nbsp; 24
+                                                X 7 Support
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carousel2"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carousel2"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <button class="btn btn2 shadow-lg">Explore More <i class="bi bi-arrow-down-circle-fill"></i></button>
+        </div>
+    </div>
+
+    <div class="container bg-white mt-5 mb-5 p-3 shadow-lg">
+        <div class="row mainpart2">
+            <div class="col-12 text-justify">
+                <p>
+                <h4>Online Cab Booking on GoIbibo</h4>
+                Most of the Indian tourists prefer travelling to their preferred destination via road. It is due to the
+                fact that a road trip allows you to enjoy the scenic beauty at your own pace. Moreover, the comfort of
+                travelling in a vehicle with your family and friends is unparalleled. You can opt for online cab booking
+                that will make your journey hassle-free. You simply have to visit the GoIbibo portal and select a cab.
+                <br>
+
+                Due to the easy-to-use interface and quick menu options of GoIbibo, online cab booking is not a
+                difficult process. In fact, cab booking is something which has become a part of our everyday life. You
+                can also opt for intercity car rentals in order to visit other cities.<br>
+
+                The online taxi booking process on GoIbibo can be completed within a couple of minutes. So, if you wish
+                to customize your cab booking package, GoIbibo is your go-to website. All the car booking services
+                available on GoIbibo are geared towards giving you the best-possible experience when it comes to cab
+                booking.<br><br>
+
+                <h4>Book Your Cab Online</h4>
+                When you choose us for your cab booking requirements, we offer you premium services, and most
+                importantly, high reliability. GoIbibo is considered one of the most popular car booking platforms.
+                Besides that, you can also visit the website for train, flight, and bus tickets. The best part is you
+                can get top-notch cars for your preferred destination.<br>
+
+                Road trips are one of the most exciting ways to travel all across the country. There is so much to
+                experience and explore. GoIbibo ensures that your road trip is an enjoyable experience.<br>
+
+                The process of booking a cab on GoIbibo is pretty simple. You just need to log in to GoIbibo's official
+                website and provide all the required details. In order to book your cab, you have to fill in the city of
+                your origin, the destination, your departure date and timings. Once all the details are filled, simply
+                click on the ‘Search’ option.<br>
+
+                On the portal, you will get a wide range of cab options available at different prices. The prices depend
+                on a lot of factors such as the type of cab you are choosing, the in-car facilities provided, the route
+                you are taking to travel as well as your date of journey. You can select a cab which meets your travel
+                requirements.<br><br>
+
+                <h4>Book a Cab for an Exciting Road Trip</h4>
+                Tourists enjoy the scenic beauty of nature, the smooth highway roads, studying the diverse cultures and
+                tasting the lip-smacking local food once when you are on holiday. There is a lot you can explore on a
+                road trip, and GoIbibo is there to be your travel companion.<br>
+
+                You can book outstation cab to visit popular tourist destinations such as Delhi, Manali, Mumbai and
+                Naintal or the unexplored gems such as Khajuraho, Alleppey, Alibag and Tranquebar simply by booking an
+                online cab booking. Planning a trip can be quite a hassle, but choose to make your online cab booking on
+                GoIbibo for an easier process. You can choose from a wide range of cabs such as hatchbacks, sedans,
+                SUVs, MPVs, and more. You can also book an outstation cab for a one-way trip as well as a round
+                trip.<br>
+
+                In case you have any booking-related queries, you can reach out to the 24/7 customer service of GoIbibo
+                and talk to the experts regarding your travel. While booking your outstation cab with us, you can also
+                get assistance in discussing the itinerary and planning your trip. Moreover, the option of using the
+                mobile app will further reduce the hassle of booking a cab. All the services offered by GoIbibo are
+                available on a single click. Moreover, you can also get exciting discounts and offers if you make your
+                bookings via GoIbibo.<br><br>
+
+                <h4>Choose GoIbibo for Online Cab Booking</h4>
+                GoIbibo can make the process of online cab booking hassle-free. Below, we are mentioning some of the
+                reasons why people choose us over and over again:<br><br>
+
+                <h4>Clean cars</h4>
+                Hygiene is the top-most priority for GoIbibo. That’s why, they ensure that the cab you book is
+                absolutely clean. Considering the Covid-19 situation, we ensure that every car is sanitized before the
+                journey and all the safety protocols are followed thoroughly. The temperature of drivers is checked
+                before every trip, and wearing masks is mandatory for the passengers as well as drivers.<br><br>
+
+                <h4>Transparent billing</h4>
+                Be assured, when you choose GoIbibo for your cab booking requirements, the services offered are at the
+                most reasonable rates. Besides that, GoIbibo also maintains 100% billing transparency. So, there are
+                zero hidden charges involved from the beginning to end of your journey. You can choose from your
+                preferred payment methods. Some of the payment options available on GoIbibo include debit card, credit
+                card, net banking and UPI.<br><br>
+
+                <h4>Reliable services</h4>
+                Every person is looking for a reliable experience that prioritizes their needs and concerns. That’s why,
+                GoIbibo offers an unparalleled experience to users when they are making cab booking online. You can
+                connect with the 24/7 customer support service of GoIbibo and resolve all your booking-related queries.
+                From providing the best services to ensuring a safe trip, GoIbibo makes sure that your trip is
+                enjoyable.<br><br>
+
+                <h4>Courteous chauffeurs</h4>
+                Dealing with impolite people is difficult. An encounter with a rude person can ruin our entire trip.
+                That’s why, GoIbibo makes sure that the chauffeur you get is polite and cooperative. You can find the
+                top-rated drivers on GoIbibo who will make your journey smooth and your trip memorable.<br><br>
+
+                <h4>Road trip experts</h4>
+                GoIbibo turns you into an expert in planning road trips. The easy access to all the travel services can
+                help you plan your travel accurately. You can reach out to the customer centre of GoIbibo. Our team
+                comprises experts who offer the best solutions for your queries. Therefore, cab booking with GoIbibo is
+                always a hassle-free experience. Whether it is for outstation trips or an airport taxi, GoIbibo can meet
+                all your travel requirements so that you can reach your desired destination safely. GoIbibo believes in
+                assuring safety, reliability, and affordability to travelers.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mainpart3 p-4 mb-5 ">
+        <h3>Cabs Booking FAQ</h3>
+        <div class="row mt-4 bg-white rounded shadow-lg">
+            <div class="col-12">
+                <p>
+                <h5 class="text-muted">How can I book cheap cabs online?</h5>
+                Goibibo helps you with online cab booking at the best prices, comparatively much lower than the local
+                vendors. Also you can use promo codes and offers on the Goibibo website & app on online cab booking to
+                get extra discounts <br><br>
+
+                <h5 class="text-muted">What are the advantages of online taxi booking?</h5>
+                Online taxi booking not only helps you with best prices but also helps you with the convenience of
+                paying through multiple payment options (like Debit Card, Credit Card, eWallets etc.). You can easily
+                compare prices and choose various categories of cabs like Hatchback cars, Sedan and SUV.<br><br>
+
+                <h5 class="text-muted">Why you should book cabs from Goibibo?</h5>
+                From Goibibo you can get confirmed cheap cabs of your choice and budget. Expert and verified drivers
+                will be taken care of your ride. Easy interface of booking with different payment modes available at
+                Goibibo and finally with no hidden charges, Goibibo is the best option for online taxi booking.<br><br>
+
+                <h5 class="text-muted">What are the best options available for cab booking?</h5>
+                While booking cabs online through Goibibo, you can choose the car based on your requirement and
+                preferences. You can book Hatchback like Indica, Swift, Sedan like Dzire, Etios and SUV like Innova,
+                Ertiga.<br><br>
+
+                <h5 class="text-muted">What kind of cabs you can book from Goibibo?</h5>
+                You can book following kinds of cabs from Goibibo: airport cabs and intercity cabs / outstation cabs.
+                You can book outstation cabs for both one-way transfers & round-trip transfers.<br><br>
+
+                <h5 class="text-muted">What are the popular outstation cab booking routes?</h5>
+                Some of the popular outstation cab booking routes are Pune to Mumbai cabs, Delhi to Jaipur cabs, Delhi
+                to Agra cabs, Pondicherry to Chennai cabs, Ahmedabad to Vadodara cabs, Bangalore to Mysore cabs and
+                Mumbai to Pune cabs.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mainpart4 bg-white p-4 shadow-lg rounded">
+        <div class="row justify-content-evenly">
+            <div class="col-12 p-4">
+                <h4>Top Cab Routes</h4>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <p class="text-primary">Delhi to Jaipur Cab <br>
+                    Delhi to Dehradun Cab<br>
+                    Delhi to Haldwani Cab<br>
+                    Dehradun to Delhi Cab<br>
+                    Mumbai to Goa Cab </p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <p class="text-primary">Delhi to Agra Cab <br>
+                    Delhi to Haridwar Cab<br>
+                    Delhi to Manali Cab<br>
+                    Bhavneshwar to Puri Cab<br>
+                    Ahmedabad to Vadodara Cab </p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <p class="text-primary">Mumbai to Pune Cab <br>
+                    Chandigrah to Shimla Cab<br>
+                    Banglore to Mysore Cab<br>
+                    Siliguri to Gangtok Cab<br>
+                    Bangalore to Hyderabad Cab </p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <p class="text-primary">Pune to Mumbai Cab <br>
+                    Chennai to Pondicherry Cab<br>
+                    Delhi to Rishikesh Cab<br>
+                    Dehradun to Bareily Cab</p>
+            </div>
+            <div class="col-lg-2">
+                <p class="text-primary">Delhi to Chandigrah Cab <br>
+                    Delhi to Mathura Cab<br>
+                    Jaipur to Delhi Cab<br>
+                    Mysore to Coorg Cab</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-evenly">
+            <div class="col-12 p-4">
+                <h4>Cab from Top Cities</h4>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <p class="text-primary">Cabs From Delhi <br>
+                    Cabs From Hyderabad <br>
+                    Cabs From Coimbatore <br>
+                    Cabs From Tirupati </p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <p class="text-primary">Cabs From Goa <br>
+                    Cabs From Kolkata <br>
+                    Cabs From Indore <br>
+                    Cabs From Ahmedabad </p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <p class="text-primary">Cabs From Banglore <br>
+                    Cabs From Jaipur<br>
+                    Cabs From Mumbai <br>
+                    Cabs From Varanasi</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <p class="text-primary">Cabs From Chennai <br>
+                    Cabs From Pune<br>
+                    Cabs From Vishakhapattanam <br>
+                    Cabs From Noida</p>
+            </div>
+            <div class="col-lg-2">
+                <p class="text-primary">Cabs From Patna <br>
+                    Cabs From Chandigrah <br>
+                    Cabs From Gurgaon<br>
+                    Cabs From Raipur </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-evenly">
+            <div class="col-12 p-4">
+                <h4>Cab to Top Cities</h4>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <p class="text-primary">Cabs to Delhi <br>
+                    Cabs to Hyderabad <br>
+                    Cabs to Coimbatore <br>
+                    Cabs to Tirupati </p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <p class="text-primary">Cabs to Goa <br>
+                    Cabs to Kolkata <br>
+                    Cabs to Indore <br>
+                    Cabs to Ahmedabad </p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <p class="text-primary">Cabs to Banglore <br>
+                    Cabs to Jaipur<br>
+                    Cabs to Mumbai <br>
+                    Cabs to Varanasi</p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <p class="text-primary">Cabs to Chennai <br>
+                    Cabs to Pune<br>
+                    Cabs to Vishakhapattanam <br>
+                    Cabs to Noida</p>
+            </div>
+            <div class="col-lg-2">
+                <p class="text-primary">Cabs to Patna <br>
+                    Cabs to Chandigrah <br>
+                    Cabs to Gurgaon<br>
+                    Cabs to Raipur </p>
+            </div>
+        </div>
+
+        <div class="row justify-content-evenly">
+            <div class="col-12 p-4">
+                <h4>Top Airport Cab Routes</h4>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <p class="text-primary">Cab From Delhi Airport <br>
+                    Cab to Ahhmedabad Airport <br>
+                    Cab From Jaipur Airport <br>
+                    Cab From Gulmarg Airport </p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <p class="text-primary">Cab From Hyderabad Airport <br>
+                    Cab From Kolkata Airport <br>
+                    Cab From Patna Airport <br>
+                    Chandigrah to Delhi Airport Cab </p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <p class="text-primary">Cab to Delhi Airport <br>
+                    Cab to Amritsar Airport <br>
+                    Cab From Madurai Airport <br>
+                    Chennai to Pondicherry Airport Cab </p>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-2">
+                <p class="text-primary">Cab From Chennai Airport <br>
+                    Cab to Chandigrah Airport <br>
+                    Cab to Pune Airport <br>
+                    Mumbai to Thane Airport Cab </p>
+            </div>
+            <div class="col-lg-2">
+                <p class="text-primary">Cab From Bangalore Airport <br>
+                    Cab to Chennai Airport <br>
+                    Ernakulam to Munnar Airport Cab <br>
+                    Cab From Mumbai Airport </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mainpart5 bg-white mt-5 shadow-lg">
+        <div class="container">
+            <div class="row justify-content-evenly">
+                <div class="col-sm-6 col-lg-3 mt-4">
+                    <strong>OUR PRODUCTS</strong>
+                    <br>
+                    Domestic Hotels
+                    <br>
+                    International Hotels
+                    <br>
+                    Domestic Flights
+                    <br>
+                    International Flights
+                    <br>
+                    Bus Booking
+                    <br>
+                    Cab Booking
+                    <br>
+                    Train ticket Booking
+                    <br>
+                    Route Planner
+                    <br>
+                    Destination Planner
+                    <br>
+                    Goibibo Advertising Solutions
+                </div>
+                <div class="col-sm-6 col-lg-3 mt-4">
+                    <strong>COMPANY</strong>
+                    <br>
+                    About Us
+                    <br>
+                    Terms & Services
+                    <br>
+                    User Agreement
+                    <br>
+                    Privacy
+                    <br>
+                    Customer Support
+                    <br>
+                    Careers
+                    <br>
+                    Corporate Social Responsibility
+                    <br>
+                    Goibibo on Mobile
+                    <br>
+                    Goibibo TV Advertisement
+                    <br>
+                    Technology@Goibibo
+                </div>
+                <div class="col-sm-6 col-lg-3 mt-4">
+                    <strong>TRAVEL RESOURCES</strong>
+                    <br>
+                    Popular Bus Routes
+                    <br>
+                    PNR Status
+                    <br>
+                    Airport Cabs
+                    <br>
+                    Hotels in India
+                    <br>
+                    Popular Airlines
+                    <br>
+                    Goibibo Offers
+                    <br>
+                    International Airports
+                    <br>
+                    City Airline Routes
+                </div>
+                <div class="col-sm-6 col-lg-3 mt-4">
+                    <strong>MORE LINKS</strong>
+                    <br>
+                    Cheap Flights
+                    <br>
+                    Train Running Status
+                    <br>
+                    Flight Schedule
+                    <br>
+                    Go Stays
+                    <br>
+                    Popular Bus Cities
+                    <br>
+                    Airports in India
+                    <br>
+                    Popular Hotel Chains
+                    <br>
+                    Hotels Near Me
+                    <br>
+                    Advertise with Us
+                </div>
+
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-muted">
+                        <b>Popular Flight Sectors</b> &nbsp;
+                        Delhi Bangkok Flights |
+                        Popular Flight SectorsDelhi Bangkok Flights | Mumbai Delhi Flights | Bengaluru Mumbai Flights
+                        |Mumbai Bengaluru Flights | Delhi Mumbai Flights | Mumbai Dubai Flights | Mumbai Singapore
+                        Flights | Delhi Dubai Flights | Mumbai Bangkok Flights | Bengaluru Delhi Flights |
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-muted"><b>Trending Hotel Cities</b> &nbsp; Hotels in Goa |
+                        Trending Hotel CitiesHotels in Goa | Hotels in Delhi |Hotels in Bengaluru | Hotels in Jaipur |
+                        Hotels in Chennai | Hotels in Kolkata | Hotels in Mumbai | Hotels in Manali | Hotels in
+                        Hyderabad | Hotels in Coorg |
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <p class="text-muted"><b>Trending International Hotel Cities</b>&nbsp;
+                    Bali Hotels | Dubai Hotels | Singapore Hotels | Kuala Lumpur Hotels | Thimphu Hotels | Bangkok
+                    Hotels | Pattaya Hotels | Kathmandu Hotels | Phuket Hotels | Pokhara Hotels | Maldives Hotels |Hong
+                    Kong Hotels | Paris Hotels | London Hotels |</p>
+            </div>
+            <div class="row">
+                <p class="text-muted"><b>Popular Bus Routes and Operators</b> &nbsp;
+                    Amritsar Chandigarh buses | Bengaluru Goa buses | Delhi Manali buses | Gandhinagar Rajkot buses |
+                    Hyderabad Bengaluru buses | Kolkata Digha buses | Jaipur Delhi buses | Bengaluru Chennai buses |
+                </p>
+            </div>
+            <div class="row">
+                <p class="text-muted"><b>Top Searched Routes</b> &nbsp;
+                    Delhi to Munnar | Delhi to Shirdi | Mumbai to Katra | Hyderabad to Ajmer | Chennai to Darjeeling |
+                </p>
+            </div>
+            <div class="row">
+                <p class="text-muted"><b>Popular Train Sectors</b> &nbsp;
+                    Mumbai to Pune Trains | Delhi To Agra Trains | Delhi To Jaipur Trains | Pune To Mumbai Trains |
+                    Bangalore To Chennai Trains |</p>
+            </div>
+            <div class="row">
+                <p class="text-muted"><b>Popular Flight Cities</b> &nbsp;
+                    Flights to Delhi | Flights from Delhi | Flights to Bangalore | Flights from Bangalore | Flights to
+                    Hyderabad | Flights from Hyderabad | Flights to Goa | Flights from Goa | Flights to Mumbai | Flights
+                    from Mumbai |</p>
+            </div>
+            <div class="row">
+                <p class="text-muted"><b>Popular Car Routes</b> &nbsp;
+                    Mumbai to Goa cars | Delhi to Jaipur cars | Bangalore to Hyderabad cars |</p>
+            </div>
+            <div class="row">
+                <p class="text-muted"><b>Trending Destinations</b> &nbsp;
+                    Goa | Manali | Shimla | Ooty | Darjeeling | Munnar | Gangtok | Mysore | Jaipur | Agra |</p>
+            </div>
+            <div class="row">
+                <p class="text-muted"><b>Trending Pages</b> &nbsp;
+                    Hotels near me |Cheap flights |Indian Hotels |Hotels in Kerala |Hotels in Rajasthan |Hotels in
+                    Sikkim |Top Rated Hotels in Goa |Top Rated Hotels in Delhi |Top Rated Hotels in Jaipur |Digha Hotels
+                    |Gurgaon Hotels |</p>
+            </div>
+            <div class="row">
+                <p class="text-muted"><b>Popular Cab Cities</b> &nbsp;
+                    Cabs to Jaipur |Cabs from Delhi |Cabs from Bangalore |Cabs to Agra |</p>
+            </div>
+        </div>
+        <hr>
+        <!-- Footer -->
+        <div class="container footer">
+            <div class="row">
+                <div class="col-md-3 p-2">
+                    <b>FOLLOW US</b><br>
+                    <i class="bi bi-facebook"></i> &nbsp;
+                    <i class="bi bi-twitter"></i>&nbsp;
+                    <i class="bi bi-youtube"></i>
+                </div>
+                <div class="col-md-5 p-2">
+                    <b>Book Tickets faster. Download our mobile Apps</b><br>
+                    <img src="assets/playstore.png" width="31%"> &nbsp;
+                    <img src="assets/appstore.png" width="31%">
+                </div>
+                <div class="col-md-4 p-2 mt-2">
+                    <img src="assets/VeriSign.png" width="10%"> &nbsp;
+                    <img src="assets/american-express.png" width="10%"> &nbsp;
+                    <img src="assets/mastercard.jpg" width="10%"> &nbsp;
+                    <img src="assets/visa.jpg" width="10%"> &nbsp;
+                    <img src="assets/rupay.png" width="10%"> &nbsp;
+                    <img src="assets/iata.png" width="10%">
+                    <br><br>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 foot">
+                        <img src="assets/makemytrip.png" width="15%"> &nbsp;
+                        <img src="assets/redbus.png" width="15%">
+                    </div>
+                    <div class="col-md-5 text-muted text-end">
+                        <small>&copy;2021 ibibogroup All Rights Reserved</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+body {
+  background-color: rgb(241, 241, 241);
+}
+
+.navbar .menu .navbar-nav .nav-item a {
+  border: 1px solid gray;
+  padding: 5px 10px;
+  margin: 0 5px;
+  font-size: 11px;
+}
+
+.navbar .menu .navbar-nav .nav-item a .bi {
+  color: rgb(0, 110, 255);
+}
+
+.navbar .menu .navbar-nav .nav-item a:hover {
+  background-color: rgb(0, 110, 255);
+  color: white;
+}
+
+.navbar .menu .navbar-nav .nav-item a:hover .bi {
+  color: white;
+}
+
+.navbar .menu .table {
+  width: 180px;
+}
+
+.navbar .menu .table td {
+  padding: 0;
+  border: none;
+  color: gray;
+  font-size: 10px;
+}
+
+.navbar .menu .table td a {
+  color: black;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.navbar .menu .table td .bi {
+  font-size: 30px;
+}
+
+.navbar .btn .container {
+  padding: 5px 20px;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.navbar .btn .container .dropdown-menu {
+  position: absolute;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.half1
+{
+  background-image: url(assets/plan1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1081%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(0%2c 110%2c 255%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c275 C 72%2c245.4 216%2c133.4 360%2c127 C 504%2c120.6 576%2c256.8 720%2c243 C 864%2c229.2 936%2c69.2 1080%2c58 C 1224%2c46.8 1368%2c161.2 1440%2c187L1440 560L0 560z' fill='rgba(242%2c 242%2c 242%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c450 C 288%2c424.8 1152%2c349.2 1440%2c324L1440 560L0 560z' fill='rgba(240%2c 240%2c 240%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1081'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main-box {
+  background-color: white;
+  border-radius: 20px;
+}
+
+.box-2 {
+  padding: 20px;
+  font-size: large;
+}
+
+.textOnInput {
+  position: relative;
+}
+
+.textOnInput label {
+  position: absolute;
+  top: -15px;
+  left: 15px;
+  padding: 2px;
+  z-index: 1;
+}
+
+.textOnInput label::after {
+  content: " ";
+  background-color: #fff;
+  width: 100%;
+  height: 20px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 500;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.form-control {
+  box-shadow: 1px 1px 4px black;
+
+}
+
+.b1 {
+  height: 60px;
+}
+
+form {
+  margin: 20px;
+  font-weight: 500;
+}
+
+.btn1 {
+  background-color: orangered;
+ 
+  text-align: center;
+  border-radius: 50px;
+  color: white;
+  border: 0px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.btn1:hover {
+  background-color:rgb(255, 131, 86);
+  transition: 0.2s;
+}
+@media (min-width:769px){
+  .btn1{
+    width: 30%;
+  position: absolute;
+  bottom: -8%;
+  left: 35%;
+  }
+}
+@media (max-width:768px){
+  .btn1{
+    width: 50%;
+  position: absolute;
+  bottom: -3%;
+  left: 25%;
+  }
+}
+
+@media (min-width:768px) {
+  #way {
+      display: flex;
+  }
+}
+
+.slider2 {
+  background: linear-gradient(to top, rgb(255, 255, 225), rgb(255, 190, 70));
+}
+
+.slider2 .clock-timer {
+  position: relative;
+  text-align: right;
+}
+
+.deal-timer {
+  background-color: orange;
+  box-shadow: 1px 1px 5px black;
+}
+
+.buttons .btn {
+  background-color: white;
+}
+
+.buttons .btn:hover {
+  background-color: rgb(0, 110, 255);
+  color: white;
+}
+
+.container #city-selector {
+  border: 1px solid white;
+  color: blue;
+}
+
+.sliderpart2 {
+  font-size: 12px;
+}
+
+.banner
+{
+  background: linear-gradient(to right,white,rgb(255, 255, 160));
+}
+.footer .bi {
+  color: gray;
+  font-size: 30px;
+}

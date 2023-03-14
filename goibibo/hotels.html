@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>goibibo hotels</title>
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Normal Css -->
+    <link rel="stylesheet" href="hotelstyle.css">
+    <link rel="Icon" href="assets/goibibologo2.png">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container-fluid">
+            <img src="assets/logo1.png" alt="" height="auto" width="10%">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="menu collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item "><a class="nav-link active rounded-pill" aria-current="page" href="index.html"><i class="bi bi-airplane-engines-fill"></i> Flights</a></li>
+                    <li class="nav-item"><a class="nav-link active rounded-pill" aria-current="page" href="hotels.html"><i class="bi bi-building-fill"></i> Hotels</a></li>
+                    <li class="nav-item"><a class="nav-link active rounded-pill" aria-current="page" href="trains.html"><i class="bi bi-train-front-fill"></i> Trains</a></li>
+                    <li class="nav-item"><a class="nav-link active rounded-pill" aria-current="page" href="cabs.html"><i class="bi bi-taxi-front-fill"></i> Cabs</a></li>
+                    <li class="nav-item"><a class="nav-link active rounded-pill" aria-current="page" href="bus.html"><i class="bi bi-bus-front-fill"></i> Buses</a></li>
+                    <li class="nav-item"><a class="nav-link active rounded-pill" aria-current="page" href="forex.html" target="_blank"><i class="bi bi-cash-coin"></i> Forex</a></li>
+                </ul>
+                <table class="table">
+                    <tr>
+                        <td rowspan="2"><i class="bi bi-wallet-fill"></i></i></td>
+                        <td>My trips</td>
+                    </tr>
+                    <tr>
+                        <td><a href="">Manage Bookings</a></td>
+                    </tr>
+                </table>
+                <div class="btn">
+                    <div class="container border" role="button" data-bs-toggle="modal" data-bs-target="#login"><i class="bi bi-person-circle text-primary"></i> Log in</div>
+
+                    <div class="modal" tabindex="-1" id="login">
+                        <div class="modal-dialog modal-lg">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title">Log in</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="container-fluid">
+                                    <div class="row text-start">
+                                        <div class="col-6 half1">
+                                            <h2 class="text-danger"><span style="font-weight: 100;">Fly</span> Easy</h2>
+                                            <input class="checkbox" type="checkbox" checked><b> Save traveler details</b> <br>
+                                            <input class="checkbox" type="checkbox" checked><b> Manage and modify bookings</b> <br>
+                                            <input class="checkbox" type="checkbox" checked><b> Hassle-free web check-in</b> <br>
+                                        </div>
+                                        <div class="col-6 half2">
+                                            <b>Login/Signup</b> <br><br>
+                                            <div class="textOnInput">
+                                                <label for="inputText">Mobile No.</label>
+                                                <input class="form-control b1" type="text" placeholder="Enter your Mobile Number">
+                                            </div> <br><br>
+                                            <p><input type="submit" value="Continue" style="width: 100%; background-color: rgb(0, 110, 255);color: white; border: none; padding: 10px;"></p> <br><br><br>
+                                            <p>By proceeding, you agree to GoIbibo’s <a href="">Privacy Policy</a>, <a href="">User Agreement</a> and <a href="">Terms of Service</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!--Main part1-->
+    <div class="container-fluid mainpart p-3">
+        <h5 style="text-align: center;">Book Hotels & Homestays</h5>
+        <div class="container main">
+            <div class="row justify-content-evenly">
+                <div class="col-md-5 column1 p-4 pb-5 rounded-3 bg-white mb-5 shadow-lg">
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="radio" name="ways" id="" checked> India &nbsp;
+                            <input type="radio" name="ways" id=""> International
+                            <br><br>
+                            <div>Where</div>
+                            <input type="text" class="w-100 border-0"
+                                placeholder="&#128269; e.q.- Area Landmark"><br><br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div>Check-in</div>
+                                    <input type="date" class="w-100 border-0">
+                                </div>
+                                <div class="col-md-6">
+                                    <div>Check-out</div>
+                                    <input type="date" class="w-100 border-0">
+                                </div>
+                            </div>
+                            <br>
+                            <div>Guests & Rooms</div>
+                            <input type="text" class="w-100 border-0" placeholder="2 Adults | 0 Childs | 1 Room"><br>
+                            <button class="btn w-50 text-white fs-5 rounded-pill">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-12">
+                            <div id="carouselExampleControls" class="carousel carousel-dark slide"
+                                data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="row justify-content-evenly">
+                                            <div class="col-sm-5 p-0 rounded-3 bg-white">
+                                                <img src="assets/main1.jpg" alt="" class="rounded-top w-100">
+                                                <p class="main-ad2 ps-3 ps-sm-1">UP to Rs. 30000 Off on International Hotel
+                                                    Bookings!</p>
+                                                <p class="main-ad ps-3 ps-sm-1 text-muted">Valid till: 22nd Jan'23</p>
+                                            </div>
+                                            <div class="col-sm-5  p-0 rounded-3 bg-white">
+                                                <img src="assets/main2.webp" alt="" class="rounded-top w-100">
+                                                <p class="main-ad2 ps-3 ps-sm-1">Rewards That'll Blow Your Mind</p>
+                                                <p class="main-ad ps-3 ps-sm-1 text-muted">Valid till: Limited Period Offer</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-evenly">
+                                            <div class="col-sm-5 p-0 rounded-3 bg-white">
+                                                <img src="assets/main3.avif" alt="" class="rounded-top w-100">
+                                                <p class="main-ad2 ps-3 ps-sm-1">Get UP to 50% Off on Royal Orchid</p>
+                                                <p class="main-ad ps-3 ps-sm-1 text-muted">Valid till: 15th - 31st</p>
+                                            </div>
+                                            <div class="col-sm-5  p-0 rounded-3 bg-white">
+                                                <img src="assets/main4.webp" alt="" class="rounded-top w-100">
+                                                <p class="main-ad2 ps-3 ps-sm-1">Avail Interest Free* EMI</p>
+                                                <p class="main-ad ps-3 ps-sm-1 text-muted">Valid till: Every Friday & Saterday
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-evenly">
+                                            <div class="col-sm-5 p-0 rounded-3 bg-white">
+                                                <img src="assets/main5.webp" alt="" class="rounded-top w-100">
+                                                <p class="main-ad2 ps-3 ps-sm-1">Flat Rs. 350 Off!</p>
+                                                <p class="main-ad ps-3 ps-sm-1 text-muted">Valid till: All Days Except Mondays
+                                                </p>
+                                            </div>
+                                            <div class="col-sm-5  p-0 rounded-3 bg-white">
+                                                <img src="assets/main6.webp" alt="" class="rounded-top w-100">
+                                                <p class="main-ad2 ps-3 ps-sm-1">Get UP to 10% Off on Travel Bookings!</p>
+                                                <p class="main-ad ps-3 ps-sm-1 text-muted">Valid till: Limited Period</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main part2 -->
+    <div class="container mb-5 mt-5">
+        <h2>Deal of the day</h2>
+        <br>
+        <div class="row deal-row bg-white">
+            <div class="col-12 dealofday rounded col-lg-3 pt-2 text-center align-items-end">
+                <span
+                    class="deal-timer ps-3 pe-3 rounded-pill">Ends in 00:00:00
+                </span><br><br><br>
+                <img src="assets/deal.webp" alt="" width="50%"><br>
+                <img src="assets/Clock_image.webp" alt="" width="20%">
+            </div>
+            <div class="col-12 col-lg-9 shadow">
+                <div id="carousel3" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row bg-white">
+                                <div class="col-lg-4">
+                                    <div class="row bg-white p-1">
+                                        <div class="col-12 p-0">
+                                            <img src="assets/hotelpage1.png" alt="" width="100%" class="rounded-top">
+                                        </div>
+                                        <div class="col-8 border">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>
+                                            <b>Hotel Eternity</b><br>
+                                            Delhi
+                                        </div>
+                                        <div class="col-4 border">
+                                            <strike>&#8377;10719</strike><br>
+                                            <span class="text-danger">&#8377;5808</span> <br>
+                                            <small>Per Night</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="row bg-white p-1">
+                                        <div class="col-12 p-0">
+                                            <img src="assets/hotelpage2.png" alt="" width="100%" class="rounded-top">
+                                        </div>
+                                        <div class="col-8 border">
+                                            <br>
+                                            <b>ASR Guest House</b><br>
+                                            Mumbai
+                                        </div>
+                                        <div class="col-4 border">
+                                            <strike>&#8377;2799</strike><br>
+                                           <span class="text-danger"> &#8377;2253</span> <br>
+                                            <small>Per Night</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="row bg-white p-1">
+                                        <div class="col-12 p-0">
+                                            <img src="assets/hotelpage3.png" alt="" width="100%" class="rounded-top">
+                                        </div>
+                                        <div class="col-8 border">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                                            <b>Hotel C Park</b><br>
+                                            Gujarat
+                                        </div>
+                                        <div class="col-4 border">
+                                            <strike>&#8377;4199</strike><br>
+                                            <span class="text-danger">&#8377;2539</span> <br>
+                                            <small>Per Night</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row bg-white">
+                                <div class="col-lg-4">
+                                    <div class="row bg-white p-1">
+                                        <div class="col-12 p-0">
+                                            <img src="assets/hotelpage4.png" alt="" width="100%" class="rounded-top">
+                                        </div>
+                                        <div class="col-8 border">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>
+                                            <b>Hotel Surya International</b><br>
+                                            Delhi
+                                        </div>
+                                        <div class="col-4 border">
+                                            <strike>&#8377;4400</strike><br>
+                                            <span class="text-danger">&#8377;2675 </span><br>
+                                            <small>Per Night</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="row bg-white p-1">
+                                        <div class="col-12 p-0">
+                                            <img src="assets/hotelpage5.png" alt="" width="100%" class="rounded-top">
+                                        </div>
+                                        <div class="col-8 border">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>
+                                            <b>Hotel Amar International</b><br>
+                                            Gujarat
+                                        </div>
+                                        <div class="col-4 border">
+                                            <strike>&#8377;4665</strike><br>
+                                            <span class="text-danger">&#8377;2500</span> <br>
+                                            <small>Per Night</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="row bg-white p-1">
+                                        <div class="col-12 p-0">
+                                            <img src="assets/hotelpage6.png" alt="" width="100%" class="rounded-top">
+                                        </div>
+                                        <div class="col-8 border">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>
+                                            <b>Hotel Sita International</b><br>
+                                            Mumbai
+                                        </div>
+                                        <div class="col-4 border">
+                                            <strike>&#8377;5400</strike><br>
+                                            <span class="text-danger">&#8377;1735</span> <br>
+                                            <small>Per Night</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row bg-white">
+                                <div class="col-lg-4">
+                                    <div class="row bg-white p-1">
+                                        <div class="col-12 p-0">
+                                            <img src="assets/hotelpage7.png" alt="" width="100%" class="rounded-top">
+                                        </div>
+                                        <div class="col-8 border">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>
+                                            <b>Hotel Shanti Villa</b><br>
+                                            Delhi
+                                        </div>
+                                        <div class="col-4 border">
+                                            <strike>&#8377;3500</strike><br>
+                                            <span class="text-danger">&#8377;1720</span> <br>
+                                            <small>Per Night</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="row bg-white p-1">
+                                        <div class="col-12 p-0">
+                                            <img src="assets/hotelpage8.png" alt="" width="100%" class="rounded-top">
+                                        </div>
+                                        <div class="col-8 border">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>
+                                            <b>Hotel D Cruise</b><br>
+                                            Gujarat
+                                        </div>
+                                        <div class="col-4 border">
+                                            <strike>&#8377;15000</strike><br>
+                                            <span class="text-danger">&#8377;7500</span> <br>
+                                            <small>Per Night</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="row bg-white p-1">
+                                        <div class="col-12 p-0">
+                                            <img src="assets/hotelpage9.png" alt="" width="100%" class="rounded-top">
+                                        </div>
+                                        <div class="col-8 border">
+                                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><br>
+                                            <b>Hotel Le Mem</b><br>
+                                            Mumbai
+                                        </div>
+                                        <div class="col-4 border">
+                                            <strike>&#8377;1800</strike><br>
+                                            <span class="text-danger">&#8377;1424 </span><br>
+                                            <small>Per Night</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel3" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel3" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- main part3 -->
+    <div class="container bg-white shadow">
+        <div class="row text-center mt-2 rounded-top">
+            <div class="col-md-2 mainpart3 p-3">Beach Vacations</div>
+            <div class="col-md-2 mainpart3 p-3">Weekend Gateways</div>
+            <div class="col-md-2 mainpart3 p-3">Mountains Caling</div>
+            <div class="col-md-2 mainpart3 p-3">Stay Like Royals</div>
+            <div class="col-md-2 mainpart3 p-3">Indian Pilgimages</div>
+            <div class="col-md-2 mainpart3 p-3">Party Destinations</div>
+        </div>
+        <div id="carousel4" class="carousel carousel-dark slide mt-2 " data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/beach1.png" alt="" width="100%">
+                            <h5>Krabi</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/beach2.png" alt="" width="100%">
+                            <h5>Phuket</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/beach3.png" alt="" width="100%">
+                            <h5>Langkawi</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/beach4.png" alt="" width="100%">
+                            <h5>Goa</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/weekend1.png" alt="" width="100%">
+                            <h5>Ooty</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/weekend2.png" alt="" width="100%">
+                            <h5>Chandigrah</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/weekend3.png" alt="" width="100%">
+                            <h5>Dehradun</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/weekend4.png" alt="" width="100%">
+                            <h5>Mannur</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/mountin1.png" alt="" width="100%">
+                            <h5>Ooty</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/mountain2.png" alt="" width="100%">
+                            <h5>Shimla</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/mountain3.png" alt="" width="100%">
+                            <h5>Mannur</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/mountain4.png" alt="" width="100%">
+                            <h5>Manali</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/royal1.png" alt="" width="100%">
+                            <h5>Jodhpur</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/royal2.png" alt="" width="100%">
+                            <h5>Udaipur</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/royal3.png" alt="" width="100%">
+                            <h5>Abu Dabi</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/royal4.png" alt="" width="100%">
+                            <h5>Dubai</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/indian1.png" alt="" width="100%">
+                            <h5>Tirupati</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/indian2.png" alt="" width="100%">
+                            <h5>Varanasi</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/indian3.png" alt="" width="100%">
+                            <h5>Puri</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/indian4.png" alt="" width="100%">
+                            <h5>Bhubneshwar</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/party1.png" alt="" width="100%">
+                            <h5>Amsterdam</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/party2.png" alt="" width="100%">
+                            <h5>Hond Kong</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/party3.png" alt="" width="100%">
+                            <h5>Mumbai</h5>
+                        </div>
+                        <div class="col-md-6 col-lg-3">
+                            <img src="assets/party4.png" alt="" width="100%">
+                            <h5>Pattaya</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel4" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel4" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>  
+    </div>
+
+    <!-- main part4 -->
+    <div class="container mt-5 mb-5 ">
+        <div class="row justify-content-evenly">
+            <div class="col-10 "><img src="assets/download.png" alt="" width="100%" class="shadow-lg"></div>
+        </div>
+    </div>
+
+    <!-- imagegallery part5 -->
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 main-imggallery p-1">
+                <img class="imggallery" src="assets/imggallery1.png" alt="" width="100%">
+                <p class="notes">
+                    Maldives <br>
+                    <span>An Ultimed luxurious nd romantic holiday destination </span>
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <div class="row p-1">
+                    <div class="main-imggallery col-md-6 col-lg-12 p-1">
+                        <img class="imggallery" src="assets/imggallery2.png" alt="" width="100%">
+                        <p class="notes">
+                            Krabi <br>
+                            <span>A quaint destination featuring endless natural beauty </span>
+                        </p>
+                    </div>
+                    <div class="main-imggallery col-md-6 col-lg-12 p-1 ">
+                        <img class="imggallery" src="assets/imggallery3.png" alt="" width="100%">
+                        <p class="notes">
+                            Goa <br>
+                            <span>An idylic combination of the sun, sand and sea </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row p-1">
+                    <div class="main-imggallery col-md-6 col-lg-12 p-1">
+                        <img class="imggallery" src="assets/imggallery5.png" alt="" width="100%">
+                        <p class="notes">
+                            Bengaluru <br>
+                            <span>Technologu hub of India </span>
+                        </p>
+                    </div>
+                    <div class="main-imggallery col-md-6 col-lg-12 p-1">
+                        <img class="imggallery" src="assets/imggallery6.png" alt="" width="100%">
+                        <p class="notes">
+                            Pattaya <br>
+                            <span>A lively and vibrant coastal city. </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="row p-1">
+                    <div class="main-imggallery col-md-6 col-lg-12 p-1">
+                        <img class="imggallery" src="assets/imggallery6.png" alt="" width="100%">
+                        <p class="notes">
+                            Mysore <br>
+                            <span>A Royal city with grand palaces and heritage sites </span>
+                        </p>
+                    </div>
+                    <div class="main-imggallery col-md-6 col-lg-12 p-1 ">
+                        <img class="imggallery" src="assets/imggallery7.png" alt="" width="100%">
+                        <p class="notes">
+                            Mumbai <br>
+                            <span>Cosmopolitan and financial capital of india</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="row p-1">
+                    <div class="main-imggallery col-md-6 col-lg-12 p-1">
+                        <img class="imggallery" src="assets/imggallery8.png" alt="" width="100%">
+                        <p class="notes">
+                            Manali <br>
+                            <span>Panoramic views of snow-laden mountains and dense deodar trees</span>
+                        </p>
+                    </div>
+                    <div class="main-imggallery col-md-6 col-lg-12 p-1">
+                        <img class="imggallery" src="assets/imggallery9.png" alt="" width="100%">
+                        <p class="notes">
+                            Shimla <br>
+                            <span>Endearing combination of snow-covered peaks and blue sky </span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 main-imggallery p-1">
+                <img class="imggallery" src="assets/imggallery10.png" alt="" width="100%">
+                <p class="notes">
+                    Phuket <br>
+                    <span>A tropical paradise boasting of stunning beaches </span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Q&A part6 -->
+    <div class="container bg-white p-3 mt-5 shadow">
+        <h3 class="p-3">Hotel Booking FAQs</h3>
+        <hr>
+        <table>
+            <tr>
+                <td>1.</td>
+                <td>What are the advantages of online hotel booking?</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;">→</td>
+                <td><p class="answers">Online hotel booking comes with great advantages for travellers. <br>
+
+                    1.You can book hotels in India or even International hotels sitting at home in few simple clicks
+                    <br>
+                    2.You can quickly check reviews, images, ratings and amenities of all the hotels at one place and
+                    compare hotels to suit your preferences for hotel booking <br>
+                    3.You can avail great discounts and offers on hotel booking through Goibibo <br>
+                    4.Avoiding the last-minute hotel search in an unknown city with high prices, you can book a suitable
+                    stay for yourself at reasonable prices online <br>
+                    5.You can avail attractive deals and cashback offers on digital payment options like credit cards,
+                    debit cards and e-wallets <br>
+                    6.You can customize your hotel to stay with plenty of room plans available <br>
+                    7.You can read the hotel policies online and experience a hassle-free stay</p></td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td>2.</td>
+                <td>In current situation of Corona pandemic (Covid 19), where can we find safe and well sanitized
+                    hotels?</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;">→</td>
+                <td><p class="answers">Goibibo in collaboration with various hotels have introduced goSafe Hotels, a collection of well sanitized hotels with trained staff who follow safe Practices at all times. These hotels have a Safe and Hygienic environment with daily disinfection of rooms, fresh room linens, regular sanitization of common areas, safe kitchen practices, maintenance of social distancing, guest and staff temperature check. The staff is trained on safe Practices and equipped with masks and gloves at all times. Some of the popular cities where you can find these safe and hygienic hotels are Goa, Mumbai, Delhi, Bangalore and many more. You can choose from wide variety of these well sanitised and clean hotels on Goibibo at best prices.</p></td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td>3.</td>
+                <td>What are the popular Indian cities which are frequently visited by people?</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;">→</td>
+                <td><p class="answers">India has been popular among visitors as it offers wide spectrum of experiences and landscapes.
+                    People travel in India for 3 main purposes: Business, Leisure & Religious. <br>
+
+                    Some of the popular Indian cities which visitors travel for Business purpose are Mumbai, Delhi, Bangalore, Ahmedabad, Kolkata, Pune and Hyderabad. These cities are pillars of India for all economic activities. These cities have plethora of Hotels which are suitable for all kind of business travellers looking for Hotel Booking. You can easily book Hotels in Delhi, Hotels in Mumbai, Hotels in Bangalore, Hotels in Pune, Hotels in Hyderabad and in many other cities from Goibibo. <br>
+
+                    Similarly, there are various Indian cities which are famous for Leisure travel. Popular ones are Goa, Jaipur, Manali, Pondicherry, Ooty and Nainital. These cities also have wide variety of Hotel and alternate accommodation options for Couples and families. Goibibo is best platform to book Hotels in Goa, Hotels in Jaipur, Hotels in Manali, Hotels in Pondicherry, Hotels in Nainital and many such leisure cities. <br>
+
+                    India being a country of diversified culture and religions, has many popular religious places. Some of these popular cities where visitors travel for religious purpose are Katra, Shirdi, Amritsar, Tirupati and Puri. These cities have also huge options in accommodation, right from budget category hotels to Luxury Hotels. Goibibo makes online hotel booking convenient for booking Hotels in Katra, Hotels in Shirdi, Hotels in Amritsar, Hotels in Tirupati, Hotels in Puri and many other such cities in India.</p></td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td>4.</td>
+                <td>Which Indian Hotels are popular among travellers for Online Hotel Booking?</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;">→</td>
+                <td><p class="answers">India being a traveller paradise attracts visitors from all over the world and also has plethora of hotels which are suitable for all kind of tourists. One can find these wide variety of hotels on Goibibo platform, as it has the largest number of Indian hotels available for Online Hotel Booking.
+                    <br>
+                Some of the popular Indian hotels in business cities like Mumbai, Delhi, Hyderabad and Chennai are The Taj Mahal Hotel Mumbai, Grand Hyatt Mumbai, The Lalit Mumbai, Trident Mumbai, Le Meridien Delhi, Hotel Taj Palace Delhi, The Lalit Delhi, Novotel Hyderabad, Park Hyatt Hyderabad, Hyatt Regency Chennai and The Hilton Chennai. These hotels are preferred by not just business travellers but by all kind of visitors who prefer luxury stay. <br>
+
+                Many visitors travel to India for leisure purpose hence they prefer Indian cities like Goa, Jaipur, Udaipur, Coorg and many other such cities. Some of the popular hotels in these leisure cities are Grand Hyatt Goa, W Goa, The Leela Goa, Taj Exotica Goa, Fairmont Jaipur, Marriott Jaipur, Radisson Blu Jaipur, The Leela Palace Udaipur, Taj Lake Palace Udaipur, The Oberoi Udaivilas, The Tamara Coorg and Heritage Resort Coorg. One can book all these hotels online at best prices on Goibibo with the convenience of paying through multiple pay modes including Pay at Hotel option.</p></td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td>5.</td>
+                <td>What are the popular International Cities for Online Hotel Booking?</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;">→</td>
+                <td><p class="answers">There are various cities in the World which are famous among travellers. Some of these popular International cities which see a lot of demand in Online Hotel Booking business are Dubai, Singapore, Phuket, Maldives, Paris, London and Bali. Goibibo has huge number of hotels on its platform available for booking Hotels in Dubai, Hotels in Singapore, Hotels in Phuket, Hotels in Maldives, Hotels in Paris, Hotels in Bali and even many more International cities. Customers can easily book these hotels on Goibibo with the convenience of multiple payment options. <br>
+
+                Goibibo being a leading travel website in India has the largest number of hotels on its platform. Not just great prices and great offers, but Goibibo also has the largest collection of hotel reviews, which is very useful in terms of choosing a right hotel for your stay. Goibibo makes online hotel booking even more convenient by offering Free Cancellation, Instant Refund and 24 hour customer support.</p></td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td>6.</td>
+                <td>How can I do a hotel booking at the lowest price through Goibibo?</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;">→</td>
+                <td><p class="answers">Goibibo offers a smooth and hassle-free hotels booking process at the lowest prices. Visit the Goibibo website or app and enter the city name, check-in and check-out date and room requirements under the hotel section. A range of hotels from luxury to budget ones will be displayed. You can customize your search basis the price range, star category, location and other relevant filters and book the best-suited hotel as per your preference. <br>
+
+                Goibibo presents offers exciting offers and discounts on hotel booking The discount codes are updated regularly under various deals. Besides this, you can also utilise your GoCash to book hotels online at the lowest prices on Goibibo. The user-friendly Goibibo site and application also has a loyalty programme which says 'The more goCash you earn, the more rewards you get by reaching different levels.' The levels range from Bronze to Titanium. The different levels are; Bronze-Silver-Gold-Platinum-Titanium. Each level has its benefits and you can utilise them for availing maximum discount while hotels booking.</p></td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td>7.</td>
+                <td>How can I earn and use GoCash on hotel booking on Goibibo?</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;">→</td>
+                <td><p class="answers">You can earn goCash by inviting your friends, referring them and syncing your contacts each time you book a hotel online. You can also earn goCash by helping others on the Goibibo platform with their booking related queries. It is important to note that there is eligibility on utilising goCash whilst hotel booking. Your gocash+Rewards level is calculated based on eligible goCash + whatever you've earned in the ongoing month + last 12 months. While booking hotel online through Goibibo, the available goCash in your wallet gets auto-applied.</p></td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td>8.</td>
+                <td>Is online hotel booking safe and reliable?</td>
+            </tr>
+            <tr>
+                <td style="vertical-align: baseline;">→</td>
+                <td><p class="answers">Being an easy and time-effective process, online hotel booking is widely preferred. Booking Hotels online is safe and reliable, provided that you rely on a reputed travel website for your online hotel bookings. Goibibo is a trustworthy online hotel booking platform which has numerous filters to help you choose the best and most suitable hotel as per your budget and preference. You can go through the star ratings, reviews and travellers' images of a particular hotel to make the best decision. Goibibo also offers 'Gostays accommodations' that come with a money-back guarantee. Gostays accommodations include free wifi, AC, breakfast, TV and good hygiene. Thus, you can always choose 'Gostays accommodations' at your convenience.</p></td>
+            </tr>
+        </table>
+        <hr>
+    </div>
+
+    <!-- Footer part7 -->
+    <div class="container-fluid mt-4 main-box bg-white">
+        <div class="container">
+            <div class="row p-3">
+                <div class="col-md-3 col-sm-6 pb-3">
+                    <strong>OUR PRODUCTS</strong>
+                    <br><br>
+                    Domestic Hotels
+                    <br>
+                    International Hotels
+                    <br>
+                    Domestic Flights
+                    <br>
+                    International Flights
+                    <br>
+                    Multi-City Flights
+                    <br>
+                    Couple Friendly Hotels
+                    <br>
+                    Nearby Getaways
+                    <br>
+                    Bus Booking
+                    <br>
+                    Cab Booking
+                    <br>
+                    Airport Cabs Booking
+                    <br>
+                    Outstation Cabs Booking
+                    <br>
+                    Train Booking
+                    <br>
+                    Go Stays
+                    <br>
+                    Trip Money
+                    <br>
+                    Goibibo Advertising Solutions
+                </div>
+                <div class="col-md-3 col-sm-6 pb-3">
+                    <strong>ABOUT US</strong>
+                    <br><br>
+                    About Us
+                    <br>
+                    Investor Relations
+                    <br>
+                    Management
+                    <br>
+                    Terms of Services
+                    <br>
+                    User Agreement
+                    <br>
+                    Privacy
+                    <br>
+                    Careers
+                    <br>
+                    YouTube Channel
+                    <br>
+                    Technology@Goibibo
+                    <br>
+                    Customer Support
+                    <br>
+                    Facebook page
+                    <br>
+                    Twitter Handle
+                </div>
+                <div class="col-md-3 col-sm-6 pb-3">
+                    <strong>TRAVEL ESSENTIALS</strong>
+                    <br><br>
+                    PNR Status
+                    <br>
+                    Offers
+                    <br>
+                    Airline Routes
+                    <br>
+                    Train Running Status
+                </div>
+                <div class="col-md-3 col-sm-6 pb-3">
+                    <strong>MORE LINKS</strong>
+                    <br><br>
+                    Cheap Flights
+                    <br>
+                    Hotels Near Me
+                    <br>
+                    My Bookings
+                    <br>
+                    Cancellations
+                    <br>
+                    My Account
+                    <br>
+                    Wallet
+                    <br>
+                    Advertising with Us
+                </div>        
+            </div>
+            <hr>
+        </div>
+        <div class="container footer">
+            <div class="row">
+                <div class="col-md-3 p-2">
+                    <b>FOLLOW US</b><br>
+                    <i class="bi bi-facebook"></i> &nbsp;
+                    <i class="bi bi-twitter"></i>&nbsp;
+                    <i class="bi bi-youtube"></i>
+                </div>
+                <div class="col-md-5 p-2">
+                    <b>Book Tickets faster. Download our mobile Apps</b><br>
+                    <img src="assets/playstore.png" width="31%"> &nbsp;
+                    <img src="assets/appstore.png" width="31%">
+                </div>
+                <div class="col-md-4 p-2 mt-2">
+                    <img src="assets/VeriSign.png" width="10%"> &nbsp;
+                    <img src="assets/american-express.png" width="10%"> &nbsp;
+                    <img src="assets/mastercard.jpg" width="10%"> &nbsp;
+                    <img src="assets/visa.jpg" width="10%"> &nbsp;
+                    <img src="assets/rupay.png" width="10%"> &nbsp;
+                    <img src="assets/iata.png" width="10%">
+                    <br><br>
+                </div>
+                <hr>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 foot">
+                        <img src="assets/makemytrip.png" width="15%"> &nbsp;
+                        <img src="assets/redbus.png" width="15%">
+                    </div>
+                    <div class="col-md-5 text-muted text-end">
+                        <small>&copy;2021 ibibogroup All Rights Reserved</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</body>
+
+</html>
